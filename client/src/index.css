@@ -174,9 +174,13 @@ tbody tr:nth-child(odd) {
   /* height: 90%; */
 }
 
-#create-ticket-link {
+.create-ticket-button {
   display: block;
   margin-left: auto;
+}
+
+#create-ticket-link {
+  color: #fff;
 }
 
 
