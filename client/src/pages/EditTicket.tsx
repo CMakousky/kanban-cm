@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { retrieveTicket, updateTicket } from '../api/ticketAPI';
 import { TicketData } from '../interfaces/TicketData';
+import auth from '../utils/auth';
 
 const EditTicket = () => {
   const [ticket, setTicket] = useState<TicketData | undefined>();
@@ -20,7 +21,11 @@ const EditTicket = () => {
   }
 
   useEffect(() => {
-    fetchTicket(state);
+    if (auth.loggedIn() === true) {
+      fetchTicket(state);
+    } else {
+      window.location.assign('/login');
+    };
   }, []);
 
   const handleSubmit = (e: FormEvent) => {
