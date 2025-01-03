@@ -24,7 +24,7 @@ const EditTicket = () => {
     if (auth.loggedIn() === true) {
       fetchTicket(state);
     } else {
-      window.location.assign('/login');
+      navigate('/login');
     };
   }, []);
 

@@ -35,7 +35,7 @@ const CreateTicket = () => {
     if (auth.loggedIn() === true) {
       getAllUsers();
     } else {
-      window.location.assign('/login');
+      navigate('/login');
     };
   }, []);
 
