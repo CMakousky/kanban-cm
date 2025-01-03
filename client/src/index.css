@@ -342,7 +342,7 @@ tbody tr:nth-child(odd) {
 
 .container {
 
-  width: 100%;
+  width: 95vmax;
 
 }
 
@@ -394,6 +394,14 @@ tbody tr:nth-child(odd) {
 
   align-items: flex-start; /* Aligns fields to the left */
 
+}
+
+
+
+#login-form {
+
+  margin: auto;
+  
 }
 
 
