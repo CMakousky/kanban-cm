@@ -25,16 +25,23 @@ const Navbar = () => {
       {
         !loginCheck ? (
           <li className='nav-item'>
-            <button type='button'>
-              <Link to='/login' className='nav-link'>Login</Link>
+            <button type='button' className='nav-link'>
+              <Link to='/login' >Login</Link>
             </button>
           </li>
         ) : (
+          <>
+          <li className='nav-item'>
+            <button type='button' id='create-ticket-link'>
+              <Link to='/create'>New Ticket</Link>
+            </button>
+          </li>
           <li className='nav-item'>
             <button type='button' className='nav-link' onClick={() => {
               auth.logout();
             }}>Logout</button>
           </li>
+          </>
         )
       }
       </ul>
