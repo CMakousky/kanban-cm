@@ -3,7 +3,9 @@
 
 ## Description
 
-Kanban-CM is a web application where the user can track project issues.
+Kanban-CM is a web-based software application where the user can track production issues for any kind of project. Create tickets that describe production issues, and then move the tickets between "Todo", "In Progress", and "Done" status. Only authenticated users may view or modify the status tickets. When a user attemps to login, the server compares the provided password against the salted and hashed password record for the specified user in the server database using bcrypt. Once authenticated, the user recieves a JWT from the server that is used to authorize interactions with the saved issue tickets.
+
+![plot](./images/Kanban-CM.jpg)
 
 ## Table of Contents
 
@@ -16,13 +18,13 @@ Kanban-CM is a web application where the user can track project issues.
 
 ## Installation
 
-Use your favorite package manager, such as Node Package Manager, to install the required dependancy packages.
+Use your favorite package manager, such as Node Package Manager, to install the required dependancy packages. Use your prefered SQL database management system, such as PostgreSQL, to create a database for the Kanban-CM software to interact with. Transpile the Kanban-CM server and client typescript code into javascript. Node Package Manager can use the scripts defined in the package.json to perform this task. After transpiling the code, the "npm run seed" script can seed the SQL database with user accounts and project issue tickets.
 
 ## Usage
 
-Login to Kanban-CM and click the on-screen buttons. Follow the link below to see the deployed web app.
+Startup the Kanban-CM server with the "npm run start" script in the top level package.json. Login to Kanban-CM and click the on-screen buttons to manage project ticket status. Follow the link below to see the deployed web app. The app may take some time to load because it is hosted on a free option at "www.render.com".
 
-[Deployed Kanban-CM](https://kanban-cm.onrender.com)
+[https://kanban-cm.onrender.com](https://kanban-cm.onrender.com)
 
 ## Contributing
 
