@@ -53,7 +53,8 @@ Click the buttons on the screen to test the client functions. Use your favorite 
         THEN I am redirected to the login page
         
         WHEN I remain inactive for a defined period
-        THEN my session expires, the JWT is invalidated, and I am redirected to the login page upon my next action
+        THEN my session expires, the JWT is invalidated, and I am redirected to the login page upon my 
+        next action
 
 
 ## Questions
