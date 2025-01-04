@@ -22,7 +22,7 @@ Use your favorite package manager, such as Node Package Manager, to install the 
 
 ## Usage
 
-Startup the Kanban-CM server with the "npm run start" script in the top level package.json. Login to Kanban-CM and click the on-screen buttons to manage project ticket status. Follow the link below to see the deployed web app. The app may take some time to load because it is hosted on a free option at "www.render.com".
+Startup the Kanban-CM server with the "npm run start" script in the top level package.json. Login to Kanban-CM and click the on-screen buttons to manage project ticket status. Follow the link below to see the deployed web app. The app may take some time to load because it is hosted using a free option.
 
 [https://kanban-cm.onrender.com](https://kanban-cm.onrender.com)
 
